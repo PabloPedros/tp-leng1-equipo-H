@@ -1,4 +1,4 @@
 Grupo H integrantes
 
 Pablo Pedros
-Omar Daza
+<p>Omar Daza</p>
