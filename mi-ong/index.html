@@ -9,63 +9,75 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Ong al rescate</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Refugio de animales "Al rescate"
-        </h1>
-        <h2>Bienvenidos </h2>
 
-    </header>
-    <nav>
-        <ul>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="programas.html">Programas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="#comoayudar">Como ayudar</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <h3>Juntos podemos darles una segunda oportunidad</h3>
-    <img src="img/logo.png" alt="logo ONG al rescate" height="500" width="500">
+
     <main>
-
-        <section>
-            <h3>Conoce nuestra labor</h3>
-            <article>
-                <div class="inicio">
-                    <h4>Historia de nuestro refugio "Al Rescate"</h4>
-                    <p>Al Rescate nació en 2015 gracias a un grupo de voluntarios
-                        comprometidos con el bienestar animal. Desde entonces,
-                        trabajamos rescatando animales en situación de abandono
-                        y promoviendo la adopción responsable.</p>
-                </div>
+        
+        <section class="gaty text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">
+                    Refugio de animales al rescate.
+                </h1>
+                <p class="lead">Juntos podemos darle una segunda oportunidad.</p>
+                <h2>Conoce nuestra labor</h2>
+            </div>
+        </section>
+    
+        <section class="contenedor-inicio">
+            <img src="img/logo.png" alt="logo ONG al rescate" height="400" width="400">
+            <article class="inicio">
+                <h4>Historia de nuestro refugio "Al Rescate"</h4>
+                <p>Al Rescate nació en 2015 gracias a un grupo de voluntarios
+                    comprometidos con el bienestar animal. Desde entonces,
+                    trabajamos rescatando animales en situación de abandono
+                    y promoviendo la adopción responsable.</p>
             </article>
-            <article>
-                <div class="inicio">
-                    <h4>Nuestra Mision</h4>
-                    <p>En al rescate trabajamos para <strong>proteger, cuidar y encontrar hogares responsables para
-                            animales
-                            en
-                            situacion de abandono.</strong><br>
-
-                    </p>
-                </div>
+            <article class="inicio">
+                <h4>Nuestra Mision</h4>
+                <p>En al rescate trabajamos para <strong>proteger, cuidar y encontrar hogares responsables para
+                        animales
+                        en
+                        situacion de abandono.</strong><br>
+                </p>
             </article>
-
-            <article>
-                <div class="inicio">
-                    <h4>¿Porque adoptar?</h4>
-                    <p>Adoptar salva vidas y brinda una segunda oportunidad a animales que necesitan una familia.
-                        Siempre es bueno adoptar y no comprar una mascota. Si quiere saber mas de este tema: <a
-                            href="https://www.ngppetfood.com/articulos-blog/por-que-adoptar-y-no-comprar-animales.html"
-                            target="_blank" rel="noopener noreferrer">Saber porque hay que adoptar y no comprar
-                            mascotas.</a>
-                    </p>
-                </div>
+            <article class="inicio">
+                <h4>¿Porque adoptar?</h4>
+                <p>Adoptar salva vidas y brinda una segunda oportunidad a animales que necesitan una familia.
+                    Siempre es bueno adoptar y no comprar una mascota. Si quiere saber mas de este tema: <a
+                        href="https://www.ngppetfood.com/articulos-blog/por-que-adoptar-y-no-comprar-animales.html"
+                        target="_blank" rel="noopener noreferrer">Saber porque hay que adoptar y no comprar
+                        mascotas.</a>
+                </p>
             </article>
             <article>
                 <div id="comoayudar">
@@ -82,14 +94,15 @@
                     <p>
                         Tu tiempo y dedicación pueden marcar la diferencia en muchas vidas.
                     </p>
+
                     <a href="contacto.html">QUIERO SER VOLUNTARIO</a><br>
-                    <img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150">
                 </div>
             </article>
         </section>
     </main>
-
+    <br>
     <footer id="footer">
+        <img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150">
         <p>¡Adopta, no compres! Cada adopción salva una vida.</p>
         <p>2026 ONG Al Rescate. Todos los derechos reservados.</p>
     </footer>

@@ -1,30 +1,34 @@
 /* VARIABLES*/
 
-:root{
-    --texto-principal : "Inter", sans-serif;
-    --color-texto : rgb(0, 0, 0);
-    --color-primario:  rgb(203, 223, 246);
-    --color-nav: rgb(73, 29, 29);
-    --tamañotexto-principal : 16px;
+:root {
+    --texto-principal: "Inter", sans-serif;
+    --color-texto: rgb(0, 0, 0);
+    --color-primario:white (190, 190, 190);
+    --color-nav: rgb(34, 70, 0);
+    --tamañotexto-principal: 16px;
+    --color-secundario: rgb(246, 252, 198);
+
 
 }
+
 /* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
     font-family: var(--texto-principal), sans-serif;
     font-size: var(--tamañotexto-principal);
     line-height: 1.6;
-    max-width: 1100px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 1rem;
     background-color: var(--color-primario);
 }
+
 /* Header*/
 header {
     background-color: var(--color-primario);
@@ -32,65 +36,173 @@ header {
 
 
 /* Navegacion */
+
+
+nav {
+    background-color: var(--color-nav)
+}
+
 nav a {
     text-decoration: none;
     font-size: 18px;
-    color: var(--color-nav);
+    color: white;
     font-weight: bold;
 
 }
 
-nav a:hover{
-    color: rgb(13, 66, 0);
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+
+}
+
+nav a:hover {
+    color: rgb(3, 5, 2);
 }
 
 /* Estilos estructura del body*/
 
-h1{
+h1 {
     font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    
 }
+
 h2 {
     font-size: 24px;
     color: var(--color-texto);
+    text-align: center;
 }
-h3{
-     font-size: 22px;
-     color: var(--color-texto);
+
+h3 {
+    font-size: 22px;
+    color: var(--color-texto);
+    text-align: center;
 }
+
 p {
     color: var(--color-texto);
     font-size: var(--tamañotexto-principal);
 }
 
-h4{
-    font-size:20px;
+h4 {
+    font-size: 20px;
 }
+
+.contenedor-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 .inicio {
     color: var(--color-texto);
-    background-color: var(--color-primario);
-    font-size: var(--tamañotexto-principal) ;
-    margin: 0;
-    padding: 0;
+    font-size: var(--tamañotexto-principal);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
 
 
-#comoyudar { 
+
+#comoyudar {
     color: var(--color-texto);
     font-size: var(--tamañotexto-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 #footer {
     font-size: var(--tamañotexto-principal);
-    background-color: rgb(218, 255, 148);
-}
-#footer p{
-    color: rgb(52,30, 4) ;
+    background-color: rgb(148, 223, 87);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
 
-.programa {
-    max-width: 1400px;
+#footer p {
+    color: black;
+}
+
+.contenedor-programa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card{
+    background-color: var(--color-secundario);
+    padding: 10px;
+}
+.card ul{
+    padding: 10px;
+}
+
+.contenedor-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.nosotros {
+    flex: 1 1 300px;
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nosotros ul {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+#contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#contenedor-contacto ul {
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/*Bootstrap/*/
+
+.navbar .nav-link.active {
+    color: white !important;
+}
+
+.gaty {
+    background-color: var(--color-nav);
+    padding: 5rem 0;
+}   
+.gaty h2{
+    color: white;
+}
+
+.lead{
+    color: white;
 }

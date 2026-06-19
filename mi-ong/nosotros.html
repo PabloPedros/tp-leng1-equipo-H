@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Ong al rescate</title>
 </head>
@@ -16,95 +17,107 @@
 <body>
     <header>
         <h1>Refugio de animales Al Rescate</h1>
-
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="programas.html">Programas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <main>
-        <section>
-            <h2>Nosotros</h2>
-            <article>
-                <div class="nosotros">
-                    <H2>¿Quienes somos?</H2>
-                    <p>Somos una organización sin fines de lucro formada por
-                        voluntarios comprometidos con el bienestar animal.
-                        Trabajamos día a día para rescatar animales en situación
-                        de abandono, brindarles atención y ayudarles a encontrar
-                        un hogar responsable.</p>
+        <section class="gaty text-white text-center py-5">
+                <div class="container">
+                    <h1 class="display-4 fw-bold">
+                        Refugio de animales al rescate.
+                    </h1>
+                    <p class="lead">Juntos podemos darle una segunda oportunidad.</p>
+                    <h2>Conoce nuestra labor</h2>
                 </div>
+        </section>
+        <section class="contenedor-nosotros">
+            
+            <article class="nosotros">
+               
+                <h3>Nuestros Valores</h3>
+                <ul>
+                    <li>Respeto por la vida animal.</li>
+                    <li>Solidaridad.</li>
+                    <li>Responsabilidad.</li>
+                    <li>Compromiso con la comunidad.</li>
+                </ul>
             </article>
-            <article>
-                <div class="nosotros">
-                    <h2>Nuestro Equipo</h2>
-                    <h3 class="equipo">Ana Martínez</h3>
-                    <p>Directora General</p>
-                    <h3 class="equipo">Pablo Pedros</h3>
-                    <p>Coordinador de rescates</p>
-                    <h3 class="equipo">Sofia Perez</h3>
-                    <p>Responsable de adopciones</p>
-                    <h3 class="equipo">Juan Gomez</h3>
-                    <p>Coordinador de voluntarios</p>
-
-                    <p>
-                        Aparte nuestro equipo está compuesto por voluntarios, rescatistas
-                        y colaboradores que dedican su tiempo y esfuerzo para
-                        mejorar la vida de los animales que más lo necesitan.
-
-                    </p>
-                </div>
+            <article class="nosotros">
+                <h3>¿Quienes somos?</h3>
+                <p>Somos una organización sin fines de lucro formada por
+                    voluntarios comprometidos con el bienestar animal.
+                    Trabajamos día a día para rescatar animales en situación
+                    de abandono, brindarles atención y ayudarles a encontrar
+                    un hogar responsable.</p>
             </article>
-            <article>
-                <div class="nosotros">
-                    <h2>Nuestros Valores</h2>
-                    <ul>
-                        <li>Respeto por la vida animal.</li>
-                        <li>Solidaridad.</li>
-                        <li>Responsabilidad.</li>
-                        <li>Compromiso con la comunidad.</li>
-                    </ul>
-                </div>
+            <article class="nosotros">
+                <h3>Nuestros Logros</h3>
+                <ul>
+                    <li>Más de 200 animales rescatados.</li>
+                    <li>200 adopciones responsables.</li>
+                    <li>Más de 10 años de trabajo.</li>
+                </ul>
             </article>
-            <article>
-                <div class="nosotros">
-                    <h2>Nuestros Logros</h2>
-                    <ul>
-                        <li>Más de 200 animales rescatados.</li>
-                        <li>200 adopciones responsables.</li>
-                        <li>Más de 10 años de trabajo.</li>
-                    </ul>
-                </div>
+            <article class="nosotros">
+                <h3>Nuestro Equipo</h3>
+                <h4>Dominica Urrutia</h4>
+                <p>Directora General</p>
+                <h4>Pablo Pedros</h4>
+                <p>Coordinador de rescates</p>
+                <h4>Sofia Perez</h4>
+                <p>Responsable de adopciones</p>
+                <h4>Juan Gomez</h4>
+                <p>Coordinador de voluntarios</p><br>
+
+
             </article>
-            <article>
-                <div class="nosotros">
-                    <h2>Nuestra Fundación</h2>
-                    <dl>
-                        <dt>Fundación</dt>
-                        <dd>2015</dd>
+            <article class="nosotros">
+                <h3>Nuestra Fundación</h3>
+                <dl>
+                    <dt>Fundación</dt>
+                    <dd>2015</dd>
 
-                        <dt>Ubicación</dt>
-                        <dd>Zona Oeste, Buenos Aires</dd>
+                    <dt>Ubicación</dt>
+                    <dd>Zona Oeste, Buenos Aires</dd>
 
-                        <dt>Tipo de organización</dt>
-                        <dd>Organización sin fines de lucro</dd>
+                    <dt>Tipo de organización</dt>
+                    <dd>Organización sin fines de lucro</dd>
 
-                        <dt>Área de trabajo</dt>
-                        <dd>Rescate y protección animal</dd>
+                    <dt>Área de trabajo</dt>
+                    <dd>Rescate y protección animal</dd>
 
-                        <dt>Voluntarios activos</dt>
-                        <dd>50</dd>
-                    </dl>
-                </div>
+                    <dt>Voluntarios activos</dt>
+                    <dd>50</dd>
+                </dl>
             </article>
         </section>
     </main>
-    <img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150">
+    <br>
     <footer id="footer">
+        <img src="img/logo.png" alt="logo ONG al rescate" height="100" width="100">
         <p>¡Adopta, no compres! Cada adopción salva una vida.</p>
         <p>2026 ONG Al Rescate. Todos los derechos reservados.</p>
     </footer>
