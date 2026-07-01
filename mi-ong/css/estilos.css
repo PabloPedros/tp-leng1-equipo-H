@@ -3,11 +3,11 @@
 :root {
     --texto-principal: "Inter", sans-serif;
     --color-texto: rgb(0, 0, 0);
-    --color-primario:white (190, 190, 190);
+    --color-primario:white;
     --color-nav: rgb(34, 70, 0);
     --tamañotexto-principal: 16px;
     --color-secundario: rgb(246, 252, 198);
-
+    --color-modoOscuro:black;
 
 }
 
@@ -23,7 +23,7 @@ body {
     font-family: var(--texto-principal), sans-serif;
     font-size: var(--tamañotexto-principal);
     line-height: 1.6;
-    max-width: 1800px;
+    /*max-width: 1800px;*/
     margin: 0 auto;
     padding: 0 1rem;
     background-color: var(--color-primario);
@@ -97,6 +97,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: rgb(213, 230, 233);
 }
 
 
@@ -191,9 +192,14 @@ h4 {
 
 /*Bootstrap/*/
 
+
+
 .navbar .nav-link.active {
-    color: white !important;
+    color: rgb(194, 159, 4) !important;
 }
+
+
+
 
 .gaty {
     background-color: var(--color-nav);
@@ -205,4 +211,91 @@ h4 {
 
 .lead{
     color: white;
+}
+
+.carousel-inner {
+    line-height: 0; 
+   
+}  
+/*Modo oscuro */
+
+
+body.oscuro {
+ background-color: var(--color-modoOscuro);
+ color: var(--color-primario);
+}
+
+
+
+body.oscuro .contenedor-inicio{
+    background-color: var(--color-modoOscuro);
+    color: var(--color-primario);
+}
+
+body.oscuro .inicio h4 {
+    color: var(--color-primario);
+}
+
+
+body.oscuro .inicio p {
+    color: var(--color-primario);
+}
+
+body.oscuro #footer {
+    background-color: rgb(12, 2, 2);
+}
+
+body.oscuro #footer p {
+    color: var(--color-primario);
+}
+
+body.oscuro .gaty{
+    background: var(--color-modoOscuro);
+}
+
+
+body.oscuro .container-fluid{
+    background-color: var(--color-modoOscuro);
+}
+
+body.oscuro .nosotros{
+    background-color:rgb(19, 0, 0);
+    color: var(--color-primario);
+}
+
+body.oscuro .nosotros h3{
+    color: var(--color-primario);
+}
+body.oscuro .nosotros p{
+    color: var(--color-primario);
+}
+
+body.oscuro #contenedor-contacto h2{
+    color: var(--color-primario);
+}
+
+body.oscuro .card{
+    background-color:rgb(19, 0, 0);
+}
+
+body.oscuro .card h4{
+   color: var(--color-primario);
+}
+
+body.oscuro .card p{
+    color: var(--color-primario);
+}
+
+
+body.oscuro .contenedor-programa h3{
+    color: var(--color-primario);
+}
+
+body.oscuro .card li{
+    color: var(--color-primario);
+}
+
+
+body.oscuro #comoayudar p {
+    color: var(--color-primario);
 }

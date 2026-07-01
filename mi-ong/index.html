@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Ong al rescate</title>
 </head>
-
 <body>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -28,6 +27,9 @@
                         <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="#comoayudar">Como ayudar</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
@@ -36,13 +38,14 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="contacto.html">Contacto</a>
                     </li>
+                     <li class="nav-item">
+                        <button type="button" id="btn-modo"  class="btn btn-dark">🌙</button>
+                    </li>
                 </ul>
-            </div>
+        
         </div>
     </nav>
-
     <main>
-        
         <section class="gaty text-white text-center py-5">
             <div class="container">
                 <h1 class="display-4 fw-bold">
@@ -52,7 +55,35 @@
                 <h2>Conoce nuestra labor</h2>
             </div>
         </section>
-    
+        <section>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/perroygato.jpg" alt="perroygato" class="d-block" style="width:100% ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/caballo.jpg" alt="ca" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aves (2).jpg" alt="aves" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        </section>
         <section class="contenedor-inicio">
             <img src="img/logo.png" alt="logo ONG al rescate" height="400" width="400">
             <article class="inicio">
@@ -100,12 +131,15 @@
             </article>
         </section>
     </main>
-    <br>
     <footer id="footer">
         <img src="img/logo.png" alt="logo ONG al rescate" height="150" width="150">
         <p>¡Adopta, no compres! Cada adopción salva una vida.</p>
         <p>2026 ONG Al Rescate. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
