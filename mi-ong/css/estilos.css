@@ -228,7 +228,7 @@ body.oscuro {
 
 
 body.oscuro .contenedor-inicio{
-    background-color: var(--color-modoOscuro);
+    background-color:var(--color-modoOscuro);
     color: var(--color-primario);
 }
 
@@ -250,7 +250,7 @@ body.oscuro #footer p {
 }
 
 body.oscuro .gaty{
-    background: var(--color-modoOscuro);
+   background-color: var(--color-modoOscuro);
 }
 
 
