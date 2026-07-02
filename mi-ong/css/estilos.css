@@ -98,20 +98,20 @@ h4 {
     align-items: center;
     text-align: center;
     background-color: rgb(213, 230, 233);
+
 }
+
 
 
 .inicio {
     color: var(--color-texto);
     font-size: var(--tamañotexto-principal);
-
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
 }
-
-
 
 
 #comoyudar {
@@ -119,19 +119,17 @@ h4 {
     font-size: var(--tamañotexto-principal);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 
 #footer {
     font-size: var(--tamañotexto-principal);
-    background-color: rgb(148, 223, 87);
-    
+    background-color: rgb(172, 209, 197);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
+   
 }
 
 #footer p {
@@ -141,14 +139,18 @@ h4 {
 .contenedor-programa {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 10px;
     gap: 20px;
 
 }
-.card{
+.programas{
     background-color: var(--color-secundario);
     padding: 10px;
+   
+    
 }
-.card ul{
+.programas ul{
     padding: 10px;
 }
 
@@ -156,6 +158,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 10px;
 
 }
 
@@ -178,28 +181,23 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px;
 
 }
 
 #contenedor-contacto ul {
     text-align: center;
-    padding: 10px;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
 }
 
 
 /*Bootstrap/*/
 
-
-
 .navbar .nav-link.active {
     color: rgb(194, 159, 4) !important;
 }
-
-
-
 
 .gaty {
     background-color: var(--color-nav);
@@ -232,7 +230,7 @@ body.oscuro .contenedor-inicio{
     color: var(--color-primario);
 }
 
-body.oscuro .inicio h4 {
+body.oscuro .inicio h3 {
     color: var(--color-primario);
 }
 
@@ -250,7 +248,7 @@ body.oscuro #footer p {
 }
 
 body.oscuro .gaty{
-   background-color: var(--color-modoOscuro);
+   background-color: rgb(10, 10, 10);
 }
 
 
@@ -274,15 +272,15 @@ body.oscuro #contenedor-contacto h2{
     color: var(--color-primario);
 }
 
-body.oscuro .card{
+body.oscuro .programas{
     background-color:rgb(19, 0, 0);
 }
 
-body.oscuro .card h4{
+body.oscuro .programas h4{
    color: var(--color-primario);
 }
 
-body.oscuro .card p{
+body.oscuro .programas p{
     color: var(--color-primario);
 }
 
@@ -291,11 +289,28 @@ body.oscuro .contenedor-programa h3{
     color: var(--color-primario);
 }
 
-body.oscuro .card li{
+body.oscuro .programas li{
     color: var(--color-primario);
 }
 
 
 body.oscuro #comoayudar p {
     color: var(--color-primario);
+}
+
+body.oscuro #comoayudar h3 {
+    color: var(--color-primario);
+}
+
+/*Formulario*/
+#formulario form{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+#formulario{
+    text-align: center;
 }

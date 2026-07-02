@@ -7,9 +7,18 @@ boton.addEventListener("click", () => {
     boton.innerHTML = "🌙";
 }
 
-})
-
-;
+});
 
 
-
+const formulario = document.getElementById("form");
+const msj = document.getElementById("mensaje");
+formulario.addEventListener("click", (event) => {
+    event.preventDefault();
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const consulta = document.getElementById("consulta").value;
+    if(nombre === "" || email === "" || consulta === ""){
+       msj.innerHTML = alert("Complete todos los campos");  
+    }
+  
+});
